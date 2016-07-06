@@ -97,8 +97,8 @@ $(function(){
   $(function(){
     jQuery(document).ready(function() {
     $('#main').backstretch([
-       "/assets/bg_1.png",
-       "/assets/bg_2.png"
+       "/assets/bg_1.jpg",
+       "/assets/bg_2.jpg"
         ],  {duration: 2000, fade: 750});
     });
   })
