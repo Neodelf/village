@@ -1,0 +1,22 @@
+%section.navbar.navbar-fixed-top.custom-navbar{:role => "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-collapse", "data-toggle" => "collapse"}
+        %span.icon.icon-bar
+        %span.icon.icon-bar
+        %span.icon.icon-bar
+      %a.navbar-brand{:href => "#"} Деревенька
+    .collapse.navbar-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          %a.smoothScroll{:href => "#main"} Главная
+        %li
+          %a.smoothScroll{:href => "#work"} Подробнее
+        %li
+          %a.smoothScroll{:href => "#about"} О нас
+        %li
+          %a.smoothScroll{:href => "#map"} Карта
+        %li
+          %a.smoothScroll{:href => "#portfolio"} Наши объекты
+        %li
+          %a.smoothScroll{:href => "#contact"} Контакты

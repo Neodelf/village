@@ -11,5 +11,13 @@
  * file per style scope.
  *
  *= require_tree .
+ *= require bootstrap.min
+ *= require font-awesome.min
+ *= require animate.min
+ *= require et-line-font
+ *= require nivo-lightbox
+ *= require nivo_themes/default/default
+ *= require style
+ *= require custom
  *= require_self
  */

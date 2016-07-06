@@ -1,0 +1,32 @@
+%section#about
+  .container
+    .row
+      .col-md-12.col-sm-12.text-center
+        .section-title
+          %strong О нас
+          %h1.heading.bold Краткая информация
+          %hr
+      .col-md-6.col-sm-12
+        %img.img-responsive{:alt => "about img", :src => "/assets/about-img.jpg"}
+      .col-md-6.col-sm-12
+        %h3.bold Деревенька
+        %h1.heading.bold Лучшее место для дома
+        / Nav tabs
+        %ul.nav.nav-tabs{:role => "tablist"}
+          %li.active
+            %a{"aria-controls" => "design", "data-toggle" => "tab", :href => "#design", :role => "tab"} Образование
+          %li
+            %a{"aria-controls" => "mobile", "data-toggle" => "tab", :href => "#mobile", :role => "tab"} Опыт работы
+          %li
+            %a{"aria-controls" => "social", "data-toggle" => "tab", :href => "#social", :role => "tab"} Деятельность
+        / tab panes
+        .tab-content
+          #design.tab-pane.active{:role => "tabpanel"}
+            %p Текст когда образовались
+            %p Еще один абзац
+          #mobile.tab-pane{:role => "tabpanel"}
+            %p Большой опыт работы
+            %p Еще один большой опыт работы
+          #social.tab-pane{:role => "tabpanel"}
+            %p Широкая деятельность
+            %p Еще о деятельности

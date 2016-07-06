@@ -12,5 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require bootstrap.min
+//= require smoothscroll
+//= require isotope
+//= require imagesloaded.min
+//= require nivo-lightbox.min
+//= require jquery.backstretch.min
+//= require wow.min
+//= require custom
 //= require_tree .

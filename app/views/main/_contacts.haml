@@ -1,0 +1,31 @@
+%section#contact
+  .container
+    .row
+      .col-md-12.col-sm-12.text-center
+        .section-title
+          %strong Наши контакты
+          %h1.heading.bold Заполните анкету и мы получим ваше сообщение
+          %hr
+      .col-md-6.col-sm-12.contact-info
+        %h2.heading.bold CONTACT INFO
+        %p Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteu sunt in culpa qui officia deserunt mollit anim id.
+        .col-md-6.col-sm-4
+          %h3
+            %i.icon-envelope.medium-icon.wow.bounceIn{"data-wow-delay" => "0.6s"}
+            EMAIL
+          %p hello@company.com
+        .col-md-6.col-sm-4
+          %h3
+            %i.icon-phone.medium-icon.wow.bounceIn{"data-wow-delay" => "0.6s"}
+            PHONES
+          %p 010-020-0340 | 090-080-0760
+      .col-md-6.col-sm-12
+        %form.wow.fadeInUp{:action => "#", "data-wow-delay" => "0.6s", :method => "get"}
+          .col-md-6.col-sm-6
+            %input.form-control{:name => "name", :placeholder => "Name", :type => "text"}
+          .col-md-6.col-sm-6
+            %input.form-control{:name => "email", :placeholder => "Email", :type => "email"}
+          .col-md-12.col-sm-12
+            %textborea.form-control{:name => "message", :placeholder => "Message", :rows => "7"}
+          .col-md-offset-4.col-md-8.col-sm-offset-4.col-sm-8
+            %input.form-control{:type => "submit", :value => "SEND MESSAGE"}
