@@ -49,6 +49,10 @@ group :development do
   gem 'capistrano3-unicorn'
 end
 
+group :production do
+  gem 'unicorn'
+end
+
 gem 'haml'
 gem 'haml-rails'
 gem 'bootstrap-sass'
