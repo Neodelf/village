@@ -45,3 +45,9 @@ group :development do
   gem 'spring'
 end
 
+gem 'haml'
+gem 'haml-rails'
+gem 'bootstrap-sass'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'activeadmin', github: 'activeadmin'
