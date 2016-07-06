@@ -27,7 +27,15 @@
 
 = render 'work'
 = render 'about'
-#team{'data-image-src' => '/assets/parallax_1.jpg', 'data-parallax' => 'scroll'}
+#team{'data-image-src' => image_url('parallax_1.jpg'), 'data-parallax' => 'scroll'}
 = render 'portfolio'
 = render 'contacts'
 = render 'footer'
+
+:javascript
+  jQuery(document).ready(function() {
+    $('#main').backstretch([
+       "#{image_url('bg_1.jpg')}",
+       "#{image_url('bg_2.jpg')}"
+        ],  {duration: 2000, fade: 750});
+    });
