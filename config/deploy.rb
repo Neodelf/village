@@ -1,6 +1,6 @@
 # encoding: utf-8
 # config valid only for Capistrano 3
-lock '3.4.0'
+lock '3.5.0'
 
 # Project configuration options
 # ------------------------------
@@ -20,8 +20,7 @@ set :use_sudo,       false
 
 set :repo_url, 'git@github.com:Neodelf/village.git'
 
-# Default branch is :master
-# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }.call
+set :branch, ENV.fetch('branch', 'master')
 
 set :scm, :git
 set :format, :pretty
