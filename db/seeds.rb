@@ -113,6 +113,6 @@ AdminUser.create!(email: Secrets.admin_login, password: Secrets.admin_password, 
 %w(104 1,383 450),
 %w(105 1,278 450),
 %w(106 1,310 450)].each do |array|
-  status, total_area = array.count == 3 ? :free : :sales
+  status = array.count == 3 ? :free : :sales
   Stead.create!(serial_number: array[0], total_area: array.last, status: status)
 end
