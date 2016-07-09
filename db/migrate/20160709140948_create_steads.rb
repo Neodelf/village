@@ -5,6 +5,7 @@ class CreateSteads < ActiveRecord::Migration
       t.integer :serial_number
       t.integer :total_area
       t.string :description
+      t.integer :status
     end
   end
 end

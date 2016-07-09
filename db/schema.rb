@@ -68,6 +68,7 @@ ActiveRecord::Schema.define(version: 20160709144513) do
     t.integer "serial_number"
     t.integer "total_area"
     t.string  "description"
+    t.integer "status"
   end
 
 end
