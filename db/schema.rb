@@ -49,21 +49,21 @@ ActiveRecord::Schema.define(version: 20160709144513) do
   add_index "admin_users", ["email"], name: "index_admin_users_on_email", unique: true, using: :btree
   add_index "admin_users", ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true, using: :btree
 
-  create_table "images_tables", force: :cascade do |t|
+  create_table "images", force: :cascade do |t|
     t.string "name"
   end
 
-  create_table "order_calls_tables", force: :cascade do |t|
+  create_table "order_calls", force: :cascade do |t|
     t.string "name"
     t.string "phone_number"
     t.text   "comment"
   end
 
-  create_table "settings_tables", force: :cascade do |t|
+  create_table "settings", force: :cascade do |t|
     t.integer "default_cost_square_meter"
   end
 
-  create_table "steads_tables", force: :cascade do |t|
+  create_table "steads", force: :cascade do |t|
     t.integer "cost_square_meter", default: 450
     t.integer "serial_number"
     t.integer "total_area"
