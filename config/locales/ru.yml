@@ -5,18 +5,27 @@ ru:
       stead: 'Участки'
       order_call: 'Заказ звонка'
       setting: 'Настройки'
+      building: 'Строительные объекты'
+      image: 'Изображения'
     attributes:
       stead:
         cost_square_meter: 'Стоимость за кв.метр'
         serial_number: 'Порядковый номер на карте'
         total_area: 'Общая площадь'
         description: 'Описание'
+        status: 'Статус'
       setting:
         default_cost_square_meter: 'Стоимость кв.метра по умолчанию'
       order_call:
         name: 'ФИО'
         phone_number: 'Контактный телефон'
         comment: 'Комментарии'
+      building:
+        title: 'Название'
+        description: 'Описание'
+      image:
+        file_data: 'Файл'
+        _destroy: 'Удалить'
     errors:
       messages:
         record_invalid: 'Возникли ошибки: %{errors}'
@@ -274,3 +283,14 @@ ru:
       long: "%d %B %Y, %H:%M"
       short: "%d %b, %H:%M"
     pm: вечера
+  active_admin:
+    new_model: 'Новый %{model}'
+    create_model: "Создать %{model}"
+    edit_model: "Редактировать %{model}"
+    update_model: "Обновить %{model}"
+    comments:
+      created_at: 'Дата создания'
+    steads:
+      status:
+        free: 'Свободный'
+        sales: 'Продан'

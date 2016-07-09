@@ -9,6 +9,9 @@ ActiveAdmin.register Stead do
     column :total_area
     column :cost_square_meter
     column :description
+    column :status do |stead|
+      status_tag I18n.t(".active_admin.steads.status.#{stead.status}"), (stead.free? ? :warning : :ok)
+    end
     actions
   end
 end
