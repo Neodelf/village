@@ -38,5 +38,7 @@ class DeviseCreateAdminUsers < ActiveRecord::Migration
     add_index :admin_users, :reset_password_token, unique: true
     # add_index :admin_users, :confirmation_token,   unique: true
     # add_index :admin_users, :unlock_token,         unique: true
+
+    AdminUser.create!(email: Secrets.admin_login, password: Secrets.admin_password, password_confirmation: Secrets.admin_password)
   end
 end

@@ -12,7 +12,6 @@ class CreateActiveAdminComments < ActiveRecord::Migration
     add_index :active_admin_comments, [:author_type, :author_id]
     add_index :active_admin_comments, [:resource_type, :resource_id]
   end
-  AdminUser.create!(email: Secrets.admin_login, password: Secrets.admin_password, password_confirmation: Secrets.admin_password)
 
   def self.down
     drop_table :active_admin_comments
