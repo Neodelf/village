@@ -55,31 +55,15 @@ set :unicorn_start_cmd,
     "(cd #{fetch(:deploy_to)}/current; rvm use #{fetch(:rvm_ruby_version)} " \
     "do bundle exec unicorn_rails -Dc #{fetch(:unicorn_conf)})"
 
-# - for unicorn - #
-namespace :deploy do
-  desc 'Start application'
-  task :start do
-    on roles(:app) do
-      execute "#{fetch(:unicorn_start_cmd)}"
-    end
-  end
 
-  desc 'Stop application'
-  task :stop do
-    on roles(:app) do
-      execute "[ -f #{fetch(:unicorn_pid)} ] && " \
-              "kill -QUIT `cat #{fetch(:unicorn_pid)}`"
-    end
-  end
+after 'deploy:publishing', 'unicorn:restart_with_gem'
 
-  after :publishing, :restart
-
-  desc 'Restart Application'
-  task :restart do
+namespace :unicorn do
+  desc 'Unicorn restart from gem'
+  task :restart_with_gem do
     on roles(:app) do
-      execute "[ -f #{fetch(:unicorn_pid)} ] && " \
-              "kill -USR2 `cat #{fetch(:unicorn_pid)}` || " \
-              "#{fetch(:unicorn_start_cmd)}"
+      invoke 'unicorn:stop'
+      invoke 'unicorn:start'
     end
   end
 end
