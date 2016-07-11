@@ -8,28 +8,20 @@
           %hr
         / ISO section
         .iso-section
-          %ul.filter-wrapper.clearfix
-            %li
-              %a.selected.opc-main-bg{"data-filter" => "*", :href => "#"} All
-            %li
-              %a.opc-main-bg{"data-filter" => ".html", :href => "#"} HTML
-            %li
-              %a.opc-main-bg{"data-filter" => ".photoshop", :href => "#"} Photoshop
-            %li
-              %a.opc-main-bg{"data-filter" => ".wordpress", :href => "#"} Wordpress
-            %li
-              %a.opc-main-bg{"data-filter" => ".mobile", :href => "#"} Mobile
+          //%ul.filter-wrapper.clearfix
+          //  %li
+          //    %a.selected.opc-main-bg{"data-filter" => "*", :href => "#"} All
+          //  %li
+          //    %a.opc-main-bg{"data-filter" => ".html", :href => "#"} HTML
+          //  %li
+          //    %a.opc-main-bg{"data-filter" => ".photoshop", :href => "#"} Photoshop
+          //  %li
+          //    %a.opc-main-bg{"data-filter" => ".wordpress", :href => "#"} Wordpress
+          //  %li
+          //    %a.opc-main-bg{"data-filter" => ".mobile", :href => "#"} Mobile
           .iso-box-section.wow.fadeIn{"data-wow-delay" => "0.9s"}
             .iso-box-wrapper.col4-iso-box
-              .iso-box.html.wordpress.mobile.col-lg-4.col-md-4.col-sm-6
-                = image_tag 'portfolio-img1.jpg'
-              .iso-box.wordpress.col-lg-4.col-md-4.col-sm-6
-                = image_tag 'portfolio-img2.jpg'
-              .iso-box.html.mobile.col-lg-4.col-md-4.col-sm-6
-                = image_tag 'portfolio-img3.jpg'
-              .iso-box.wordpress.col-lg-4.col-md-4.col-sm-6
-                = image_tag 'portfolio-img4.jpg'
-              .iso-box.html.photoshop.col-lg-4.col-md-4.col-sm-6
-                = image_tag 'portfolio-img5.jpg'
-              .iso-box.photoshop.col-lg-4.col-md-4.col-sm-6
-                = image_tag 'portfolio-img6.jpg'
+              - @buildings.each do |b|
+                .iso-box.html.wordpress.mobile.col-lg-4.col-md-4.col-sm-6
+                  = link_to building_path(b) do
+                    = image_tag b.images.first.file_data.url(:gallery)

@@ -8,6 +8,7 @@ ActiveAdmin.register Building do
       f.input :description
       f.has_many :images do |image|
         image.input :file_data, as: :file, hint: image.template.image_tag(image.object.file_data.url(:admin))
+        image.input :title
         image.input :_destroy, as: :boolean, required: false
       end
       f.actions
@@ -22,6 +23,7 @@ ActiveAdmin.register Building do
         ul do
           building.images.each do |image|
             li do
+              image.title
               image_tag(image.file_data.url(:admin))
             end
           end
