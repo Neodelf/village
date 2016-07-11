@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
   root to: 'main#home'
   resources :buildings, only: :show
+  resources :order_calls, only: :create
 end

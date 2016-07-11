@@ -5,7 +5,11 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-AdminUser.create!(email: Secrets.admin_login, password: Secrets.admin_password, password_confirmation: Secrets.admin_password)
+AdminUser.create!(
+  email: Rails.application.secrets.admin_login,
+  password: Rails.application.secrets.admin_password,
+  password_confirmation: Rails.application.secrets.admin_password
+)
 
 [%w(1 1,722 450),
 %w(2 1,582 450),
