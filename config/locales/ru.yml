@@ -23,9 +23,14 @@ ru:
       building:
         title: 'Название'
         description: 'Описание'
+        images: 'Изображения'
       image:
         file_data: 'Файл'
         _destroy: 'Удалить'
+        title: 'Название'
+        kind: 'Тип'
+        photo: 'Фото'
+        plan: 'План'
     errors:
       messages:
         record_invalid: 'Возникли ошибки: %{errors}'
