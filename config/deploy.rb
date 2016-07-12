@@ -31,7 +31,6 @@ set :log_level, :info
 
 # Default value for :linked_files is []
 set :linked_files, %w{config/database.yml config/secrets.yml}
-set :linked_files, %w{config/database.yml config/secrets.yml}
 
 # Default value for linked_dirs is []
 set :linked_dirs, %w(log tmp/cache tmp/pids vendor/bundle public/system public/uploads)
