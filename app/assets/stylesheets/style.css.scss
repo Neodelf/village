@@ -607,7 +607,7 @@ pricing section
 contact section
 ========================================================================== */
 #contact {
-  background: #3B3B3B url('/assets/contact-bg.jpg') no-repeat center center;
+  background: #3B3B3B asset-url('contact-bg.jpg') no-repeat center center;
   background-size: cover;
   color: #ffffff;
 }
