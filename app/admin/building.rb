@@ -10,7 +10,7 @@ ActiveAdmin.register Building do
       f.input :description
       f.has_many :images do |image|
         image.input :file_data, as: :file, hint: image.template.image_tag(image.object.file_data.url(:admin))
-        image.input :remote_file_data_url
+        #image.input :remote_file_data_url
         image.input :title
         image.input :kind, as: :select, collection: Image::KIND.map { |kind| [I18n.t("activerecord.attributes.image.#{kind}", kind)] }
         image.input :_destroy, as: :boolean, required: false

@@ -1,6 +1,6 @@
 class Image < ActiveRecord::Base
   KIND = %w(photo plan)
-  validate :upload_or_remote_url
+  #validate :upload_or_remote_url
   mount_uploader :file_data, ImageUploader
   belongs_to :building
 
