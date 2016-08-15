@@ -26,6 +26,7 @@ ru:
         images: 'Изображения'
       image:
         file_data: 'Файл'
+        remote_file_data_url: 'Ссылка на изображение'
         _destroy: 'Удалить'
         title: 'Название'
         kind: 'Тип'
@@ -299,3 +300,4 @@ ru:
       status:
         free: 'Свободный'
         sales: 'Продан'
+  specify_image: 'Загрузите или вставьте ссылку на изображение'

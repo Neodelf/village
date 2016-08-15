@@ -1,5 +1,7 @@
 ActiveAdmin.register Building do
-  permit_params :title, :description, images_attributes: [ :id, :file_data, :_destroy, :title, :kind ]
+  permit_params :title, :description, images_attributes: [
+                          :id, :file_data, :_destroy, :title, :kind, :remote_file_data_url
+                      ]
 
   form do |f|
     f.inputs I18n.t('activerecord.models.building') do
@@ -8,6 +10,7 @@ ActiveAdmin.register Building do
       f.input :description
       f.has_many :images do |image|
         image.input :file_data, as: :file, hint: image.template.image_tag(image.object.file_data.url(:admin))
+        image.input :remote_file_data_url
         image.input :title
         image.input :kind, as: :select, collection: Image::KIND.map { |kind| [I18n.t("activerecord.attributes.image.#{kind}", kind)] }
         image.input :_destroy, as: :boolean, required: false
