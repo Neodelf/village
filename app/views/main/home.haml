@@ -1,4 +1,6 @@
 %body{'data-offset' => '50', 'data-spy' => 'scroll', 'data-target' => '.navbar-collapse'}
+  = stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Roboto:400,300,500'
+  = javascript_include_tag 'application.js'
   .preloader
     .sk-spinner.sk-spinner-circle
       .sk-circle1.sk-circle
@@ -28,15 +30,12 @@
 
   = render 'work'
   = render 'about'
-  #team{'data-image-src' => image_url('parallax_1.jpg'), 'data-parallax' => 'scroll'}
   = render 'portfolio'
   = render 'map'
   = render 'contacts'
   = render 'footer'
 
 
-  = stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Roboto:400,300,500'
-  = javascript_include_tag 'application.js'
 
 :javascript
   jQuery(document).ready(function() {

@@ -1,4 +1,4 @@
-%section#about
+%section#about{'data-image-src' => image_url('parallax_2.jpg'), 'data-parallax' => 'scroll'}
   .container
     .row
       .col-md-12.col-sm-12.text-center
@@ -6,11 +6,6 @@
           %strong О нас
           %h1.heading.bold Краткая информация
           %hr
-      .col-md-6.col-sm-12
-        = image_tag 'about-img.jpg', class: 'img-responsive'
-      .col-md-6.col-sm-12
-        %h3.bold Деревенька
-        %h1.heading.bold Лучшее место для дома
         / Nav tabs
         %ul.nav.nav-tabs{:role => "tablist"}
           %li.active
