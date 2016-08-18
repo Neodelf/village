@@ -20,4 +20,5 @@
 //= require jquery.backstretch.min
 //= require wow.min
 //= require custom
+//= require mapper
 //= require_tree .
