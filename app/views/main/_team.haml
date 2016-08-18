@@ -2,7 +2,7 @@
   .container
     .row
       .col-md-12.col-sm-12.text-center
-        %img#img1.mapper{alt: 'Текстовый редактор', border: '0', ismap: 'ismap', src: '/assets/Genplan_new-cropped.jpg', usemap: '#map1'}
+        = image_tag 'Genplan_new-cropped-formatted.jpg', usemap: '#map1', border: '0', ismap: 'ismap' , id: '#img1', class: 'mapper'
         %map#map1{name: 'map1'}
           %area#a1{alt:"LoL", shape:"poly", coords:"45,112,106,100,113,131,50,143"}
           %area#a2{alt:"LoL", shape:"poly", coords:"55,170,119,158,113,132,51,144"}
