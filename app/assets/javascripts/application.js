@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require bootstrap.min
 //= require smoothscroll
-//= require imagesloaded.min
 //= require nivo-lightbox.min
 //= require jquery.backstretch.min
 //= require wow.min
