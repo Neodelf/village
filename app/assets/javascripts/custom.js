@@ -6,7 +6,8 @@ $(window).load(function(){
 
 // jQuery to collapse the navbar on scroll //
 $(window).scroll(function() {
-    if ($(".navbar").offset().top > 50) {
+    var navbar = $(".navbar");
+    if (navbar.length > 0 && navbar.offset().top > 50) {
         $(".navbar-fixed-top").addClass("top-nav-collapse");
     } else {
         $(".navbar-fixed-top").removeClass("top-nav-collapse");
@@ -26,9 +27,12 @@ $(function(){
         $(".navbar-collapse").collapse('hide');
     });
 
-  $('.iso-box-section a').nivoLightbox({
-        effect: 'fadeScale'
+  var iso_box_section = $('.iso-box-section a');
+  if (iso_box_section.length > 0) {
+    iso_box_section.nivoLightbox({
+      effect: 'fadeScale'
     });
+  }
 
 });
 
