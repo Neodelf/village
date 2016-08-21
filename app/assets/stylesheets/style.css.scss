@@ -69,7 +69,7 @@ hr {
   font-size: 32px !important;
 }
 
-#work,#about, #team, 
+#work,#about, #genplan,
 #portfolio, #pricing, #contact, #map {
    padding-top: 100px;
   padding-bottom: 100px;
@@ -391,23 +391,23 @@ about section
 /* ==========================================================================
 team section
 ========================================================================== */
-#team {
+#genplan {
   text-align: center;
 }
-#team h3 {
+#genplan h3 {
   color: $average_blue;
   font-size: 14px;
   font-weight: bold;
 }
-#team .col-md-3 {
+#genplan .col-md-3 {
   padding-top: 20px;
   padding-bottom: 20px;
 }
-#team .team-wrapper {
+#genplan .team-wrapper {
   overflow: hidden;
   position: relative;
 }
-#team .team-des {
+#genplan .team-des {
   background-color: rgba(00,00,00,0.6);
   position: absolute;
   color: #ffffff;
@@ -436,18 +436,18 @@ team section
       -ms-flex-direction: column;
           flex-direction: column;
 }
-#team .team-des:hover {
+#genplan .team-des:hover {
  opacity: 1;
 }
-#team img {
+#genplan img {
   margin: 0 auto;
 }
 
-#team .social-icon li a {
+#genplan .social-icon li a {
   color: #fff;
 }
 
-#team .social-icon li a:hover {
+#genplan .social-icon li a:hover {
   color: $average_blue;
 }
 
