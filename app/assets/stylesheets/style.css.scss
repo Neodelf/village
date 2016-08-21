@@ -606,9 +606,9 @@ pricing section
 contact section
 ========================================================================== */
 #contact {
-  background: #3B3B3B asset-url('contacts_2.jpg') no-repeat center center;
+  //background: asset-url('contacts_2_format.jpg') no-repeat center center;
+  background-color: #f6f6f6;
   background-size: cover;
-  color: #ffffff;
 }
 #contact h2 {
   padding-bottom: 20px;

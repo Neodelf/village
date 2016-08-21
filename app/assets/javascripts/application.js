@@ -22,3 +22,12 @@
 //= require custom
 //= require mapper
 //= require_tree .
+
+$(document).ready(function(){
+  $('#map1 > area')
+    .mouseover(function() {
+      var stead_serial_number = $(this).attr('id').substring(1),
+          info = $('.stead_' + stead_serial_number).html();
+      $('.stead-info').html(info);
+    })
+});
