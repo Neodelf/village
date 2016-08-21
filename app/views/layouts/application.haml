@@ -7,4 +7,7 @@
       %meta{:content => 'width=device-width, initial-scale=1', :name => 'viewport'}
       %meta{:content => '', :name => 'keywords'}
       %meta{:content => '', :name => 'description'}
-  = yield
+    = stylesheet_link_tag 'application'
+    = javascript_include_tag 'application.js'
+  %body{'data-offset' => '50', 'data-spy' => 'scroll', 'data-target' => '.navbar-collapse'}
+    = yield

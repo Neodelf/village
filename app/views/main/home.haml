@@ -1,26 +1,13 @@
-%body{'data-offset' => '50', 'data-spy' => 'scroll', 'data-target' => '.navbar-collapse'}
-  = stylesheet_link_tag 'application', 'https://fonts.googleapis.com/css?family=Roboto:400,300,500'
-  = javascript_include_tag 'application.js'
+= render 'shared/navpanel'
 
-  = render 'shared/navpanel'
-
-  %section#main
-    .container
-      .row
-        .col-md-12.col-sm-12
-          %h3 КОТТЕДЖНЫЙ ПОСЕЛОК
-          %h1 ДЕРЕВЕНЬКА
-          %hr
-            %a.smoothScroll.btn.btn-danger{href: '#work'} Подробнее
-            %a.smoothScroll.btn.btn-default{href: '#contact'} Связаться с нами
-
-  = render 'work'
-  = render 'about'
-  = render 'portfolio'
-  = render 'map'
-  = render 'genplan'
-  = render 'contacts'
-  //= render 'footer'
+= render 'main'
+= render 'work'
+= render 'about'
+= render 'portfolio'
+= render 'map'
+= render 'genplan'
+= render 'contacts'
+//= render 'footer'
 
 :javascript
   jQuery(document).ready(function() {
