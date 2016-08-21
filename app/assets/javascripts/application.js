@@ -14,14 +14,12 @@
 //= require jquery_ujs
 //= require bootstrap.min
 //= require smoothscroll
-//= require isotope
 //= require imagesloaded.min
 //= require nivo-lightbox.min
 //= require jquery.backstretch.min
 //= require wow.min
 //= require custom
 //= require mapper
-//= require_tree .
 
 $(document).ready(function(){
   $('#map1 > area')
