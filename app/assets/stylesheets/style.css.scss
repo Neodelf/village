@@ -455,7 +455,6 @@ team section
 portfolio section
 ========================================================================== */
 #portfolio {
-  background-color: #f6f6f6;
   text-align: center;
   }
 #portfolio .container {
@@ -653,6 +652,18 @@ contact section
   color: #000000;
 }
 
+
+/* ==========================================================================
+map section
+========================================================================== */
+#map {
+  background-color: #f6f6f6;
+}
+
+#yandex-map {
+  height: 400px;
+  margin: 0 auto;
+}
 
 /* ==========================================================================
 footer section
