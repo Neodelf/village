@@ -1,10 +1,13 @@
 !!!
 %html
   %head
-    %meta{:charset => 'utf-8'}
-      %title Деревенька
-      %meta{:content => 'IE=Edge', 'http-equiv' => 'X-UA-Compatible'}
-      %meta{:content => 'width=device-width, initial-scale=1', :name => 'viewport'}
-      %meta{:content => '', :name => 'keywords'}
-      %meta{:content => '', :name => 'description'}
-  = yield
+    %meta{charset: 'utf-8'}
+    %title Деревенька
+    %meta{content: 'IE=Edge', 'http-equiv' => 'X-UA-Compatible'}
+    %meta{content: 'width=device-width, initial-scale=1', name: 'viewport'}
+    %meta{content: '', name: 'keywords'}
+    %meta{content: '', name: 'description'}
+    = stylesheet_link_tag 'gallery'
+    = javascript_include_tag 'jquery.js','jquery.sldr.min', 'jquery.cookie.js', 'buildings.js'
+  %body{'data-offset' => '50', 'data-spy' => 'scroll', 'data-target' => '.navbar-collapse'}
+    = yield
