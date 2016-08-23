@@ -344,8 +344,8 @@ work section
 about section
 ========================================================================== */
 #about {
-  //background: #3B3B3B;
-  color: #12544D;
+  background: #f6f6f6;
+  color: $average_blue;
 }
 .nav-tabs {
   margin-top: 20px;
@@ -357,7 +357,7 @@ about section
 }
 .nav-tabs > li > a {
 	display: block;
-  	color: #ffffff;
+  	color: black;
   	font-size: 16px;
   	padding: 10px 20px;
   	border: 0;
@@ -374,6 +374,7 @@ about section
   background-color: transparent;
   border: 1px solid transparent;
   border-bottom-color: transparent;
+  font-weight: bold;
 }
 .tab-content {
   padding-top: 20px;
