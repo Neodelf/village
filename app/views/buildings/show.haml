@@ -1,25 +1,25 @@
 = stylesheet_link_tag 'gallery'
-
-%body
-  .stage
-    #SLDR-ONE.sldr
-      %ul.wrp.animate
-        - words = %w(one two three four)
-        - @images.each_with_index do |image, index|
-          %li{ class: "elmnt-#{words[index]}" }
-            = image_tag image.file_data.url(:gallery), style: {height: '563', width: '1000'}, class: 'sldr-load'
-    .captions
-      - @images.each do |image|
-        %div
-          %p
-            %small
-              = image.title
-    %ul.selectors
-      - @images.count.times do |number|
-        %li{ class: "#{ 'focalPoint' if number == @images.count }"}
-          %a{href: ''} •
-    %button.sldr-prv.sldr-nav.prev Назад
-    %button.sldr-nxt.sldr-nav.next Вперед
-    //%p Статический текст
-
 = javascript_include_tag 'jquery.js','jquery.sldr.min', 'jquery.cookie.js', 'buildings.js'
+%body
+  .building-show
+    .stage
+      #SLDR-ONE.sldr
+        %ul.wrp.animate
+          - words = %w(one two three four)
+          - @images.each_with_index do |image, index|
+            %li{ class: "elmnt-#{words[index]}" }
+              = image_tag image.file_data.url(:gallery), style: {height: '563', width: '1000'}, class: 'sldr-load'
+      .captions
+        - @images.each do |image|
+          %div
+            %p
+              %small
+                = image.title
+      %ul.selectors
+        - @images.count.times do |number|
+          %li{ class: "#{ 'focalPoint' if number == @images.count }"}
+            %a{href: ''} •
+      %button.sldr-prv.sldr-nav.prev Назад
+      %button.sldr-nxt.sldr-nav.next Вперед
+      //%p Статический текст
+
