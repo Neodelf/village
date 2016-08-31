@@ -1,5 +1,5 @@
 ActiveAdmin.register Stead do
-  permit_params :cost_square_meter, :serial_number, :total_area, :description
+  permit_params :cost_square_meter, :serial_number, :total_area, :description, :status
   actions :edit, :update, :index, :show
   config.per_page = 20
   config.sort_order = 'serial_number'

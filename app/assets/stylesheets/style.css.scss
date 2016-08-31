@@ -5,7 +5,7 @@ Template 2075 Digital Team
 http://www.tooplate.com/view/2075-digital-team
 
 */
-$average_blue: #12544D;
+$average_blue: #0F3C76;
 $average_green: #587D1B;
 
 body {
@@ -59,6 +59,7 @@ hr {
 
 .section-title h1 {
 	font-size: 24px;
+    color: #22334A;
 }
 
 .section-title {
@@ -218,7 +219,7 @@ navigation section
     margin-bottom: 0;
 }
 .custom-navbar .navbar-brand  {
-  color: $average_blue;
+  color: white;
   font-weight: 600;
   font-size: 24px;
 }
@@ -232,7 +233,8 @@ navigation section
     color: #ffffff;
     font-size: 14px;
     font-weight: 500;
-    }
+    text-shadow: #000000 1px 1px 0px;
+}
 .custom-navbar .nav li a:hover {
   	background: transparent;
    color: #eeeeee;
@@ -243,8 +245,9 @@ navigation section
   outline: none;
 }
 .custom-navbar .nav li.active > a {
-      color: $average_blue;
-    }
+      color: #22334A;
+  //text-decoration: underline;
+}
 .custom-navbar .navbar-toggle {
         border: none;
         padding-top: 10px;
@@ -262,7 +265,7 @@ navigation section
          }
     .custom-navbar.top-nav-collapse {
             padding: 8px;
-            background: #406fa9;
+            background: #6599DD;
         }
 }
 
@@ -282,6 +285,7 @@ main section
       align-items: center;
   height: 100vh;
   text-align: center;
+  text-shadow: #000000 1px 1px 0px;
 }
 #main h1 {
   font-size: 40px;
@@ -650,7 +654,8 @@ contact section
   color: #ffffff;
 }
 #contact input[type="submit"]:hover {
-  color: #000000;
+  //color: #000000;
+  text-decoration: underline;
 }
 
 
