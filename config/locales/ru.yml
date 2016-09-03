@@ -24,6 +24,7 @@ ru:
         title: 'Название'
         description: 'Описание'
         images: 'Изображения'
+        position: 'Позиция'
       image:
         file_data: 'Файл'
         remote_file_data_url: 'Ссылка на изображение'

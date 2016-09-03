@@ -2,6 +2,14 @@ ActiveAdmin.register Building do
   permit_params :title, :description, images_attributes: [
                           :id, :file_data, :_destroy, :title, :kind, :remote_file_data_url
                       ]
+  config.sort_order = 'position_asc'
+
+  index do
+    column :position
+    column :title
+    column :description
+    actions
+  end
 
   form do |f|
     f.inputs I18n.t('activerecord.models.building') do
@@ -41,5 +49,13 @@ ActiveAdmin.register Building do
       end
     end
     active_admin_comments
+  end
+
+  collection_action :sort, method: :put do
+    Building.all.each do |sortable_object|
+      new_position = params[:sortable].index(sortable_object.id.to_s) + 1
+      sortable_object.update_attribute(:position, new_position)
+    end
+    render nothing: true
   end
 end
