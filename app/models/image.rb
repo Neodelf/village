@@ -1,6 +1,8 @@
 class Image < ActiveRecord::Base
-  KIND = %w(photo plan)
+  KIND = [:photo, :plan]
+  enum kind: KIND
   validate :upload_or_remote_url
+  validates :kind, presence: true
   mount_uploader :file_data, ImageUploader
   belongs_to :building
 

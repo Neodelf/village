@@ -266,6 +266,7 @@ navigation section
     .custom-navbar.top-nav-collapse {
             padding: 8px;
             background: #6599DD;
+            border: 1px solid #bbbbbb !important;
         }
 }
 
@@ -298,7 +299,7 @@ main section
 }
 #main .btn {
   background: transparent;
-  border: 4px solid #ffffff;
+  border: 3px solid #ffffff;
   border-radius: 0;
   color: #ffffff;
   font-size: 15px;
@@ -308,6 +309,7 @@ main section
   margin-top: 40px;
   margin-right: 16px;
   transition: all 0.4s ease-in-out;
+  min-width: 248.11px;
 }
 #main .btn:hover {
   background: $average_blue;
@@ -662,13 +664,16 @@ contact section
 /* ==========================================================================
 map section
 ========================================================================== */
-#map {
-  background-color: #f6f6f6;
-}
-
 #yandex-map {
   height: 400px;
   margin: 0 auto;
+}
+
+/* ==========================================================================
+genplan section
+========================================================================== */
+#genplan {
+  background-color: #f6f6f6;
 }
 
 /* ==========================================================================
