@@ -5,7 +5,7 @@ ru:
       stead: 'Участки'
       order_call: 'Заказ звонка'
       setting: 'Настройки'
-      building: 'Строительные объекты'
+      building: 'Реализованные объекты'
       image: 'Изображения'
     attributes:
       stead:
