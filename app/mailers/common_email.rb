@@ -1,5 +1,5 @@
 class CommonEmail < ActionMailer::Base
-  default from: 'info@village.com'
+  default from: 'Site derevenka.net'
   RECIPIENTS = 'info@derevenka.net'
 
   def new_order_call(id)
