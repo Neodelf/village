@@ -17,7 +17,7 @@ p {
 }
 
 a {
-    color: #6267b9;
+    color: #CCC;
     -webkit-transition: color 0.25s cubic-bezier(0.860, 0.000, 0.070, 1.000);
     -moz-transition: color 0.25s cubic-bezier(0.860, 0.000, 0.070, 1.000);
     -o-transition: color 0.25s cubic-bezier(0.860, 0.000, 0.070, 1.000);
@@ -32,7 +32,7 @@ button {
     border-radius: 4px;
     cursor: pointer;
     border: none;
-    background: #6267b9;
+    background: #6599DD;
     padding: 8px 14px;
 }
 
@@ -116,7 +116,7 @@ img {
 }
 
 .selectors li.focalPoint a {
-    color: #CCC;
+    color: #6599DD;
     cursor: default;
 }
 
