@@ -1,0 +1,14 @@
+$.magnificPopup.open({
+  items: [
+    <% @images.each do |image| %>
+	  {
+	    src: '<%= image.file_data.url(:gallery) %>'
+	  },
+    <% end %>
+  ],
+  gallery: {
+    enabled: true
+  },
+  type: 'image' // this is default type
+});
+

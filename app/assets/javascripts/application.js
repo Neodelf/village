@@ -14,11 +14,11 @@
 //= require jquery_ujs
 //= require bootstrap.min
 //= require smoothscroll
-//= require nivo-lightbox.min
 //= require jquery.backstretch.min
 //= require wow.min
 //= require custom
 //= require mapper
+//= require magnific
 
 $(document).ready(function(){
   $('#map1 > area')

@@ -10,9 +10,10 @@
 //= render 'footer'
 
 :javascript
-  jQuery(document).ready(function() {
+  $(document).ready(function() {
     $('#main').backstretch([
        "#{image_url('bg_1.jpg')}",
        "#{image_url('bg_2.jpg')}"
-        ],  {duration: 2000, fade: 750});
-    });
+        ],  {duration: 2000, fade: 750}
+    );
+  });
