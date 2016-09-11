@@ -15,3 +15,16 @@
   width: 100%;
   height: 650px;
 }
+.toggle_button {
+  overflow: hidden;
+  background: #0F3C76;
+  border-radius: 0;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 12px 42px;
+  transition: all 0.4s ease-in-out;
+  max-width: 248.11px;
+  margin: 0 auto 20px;
+}

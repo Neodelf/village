@@ -21,10 +21,38 @@
 //= require magnific
 
 $(document).ready(function(){
-  $('#map1 > area')
-    .mouseover(function() {
-      var stead_serial_number = $(this).attr('id').substring(1),
-          info = $('.stead_' + stead_serial_number).html();
-      $('.stead-info').html(info);
-    })
+  $('#map1 > area').mouseover(function() {
+    var stead_serial_number = $(this).attr('id').substring(1),
+      info = $('.stead_' + stead_serial_number).html();
+    $('.stead-info').html(info);
+  });
+
+  $('#main').backstretch([
+      "#{image_url('bg_1.jpg')}",
+      "#{image_url('bg_2.jpg')}"
+    ],  {duration: 2000, fade: 750}
+  );
+  var toggle_button = $('.toggle_button');
+  toggle_button.text('Развернуть все');
+  toggle_buildings();
+
+  toggle_button.on('click', function(){
+    toggle_buildings();
+    toggle_button_text();
+  })
 });
+
+function toggle_button_text(){
+  var button = $('.toggle_button');
+  if (button.text() == 'Развернуть все'){
+    button.text('Свернуть');
+  } else if (button.text() == 'Свернуть'){
+    window.location.hash = '#portfolio';
+    button.text('Развернуть все');
+  }
+}
+function toggle_buildings(){
+  $('.toggle_part').each(function(){
+    $(this).toggle(400);
+  });
+}
