@@ -12,7 +12,7 @@
               - @buildings.each_with_index do |b, i|
                 .iso-box.html.wordpress.mobile.col-lg-4.col-md-4.col-sm-6{class: "#{ 'toggle_part' if i > 5 }"}
                   = link_to building_path(b), class: 'ajax-popup-link', remote: true do
-                    = image_tag b.images.first.file_data.url(:gallery)
+                    = image_tag Building.first.images.first.file_data.url(:gallery)
                 - if i == @buildings_size
                   .row.toggle_button
                     Развернуть все

@@ -47,7 +47,6 @@ function toggle_button_text(){
   if (button.text() == 'Развернуть все'){
     button.text('Свернуть');
   } else if (button.text() == 'Свернуть'){
-    window.location.hash = '#portfolio';
     button.text('Развернуть все');
   }
 }
