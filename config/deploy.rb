@@ -6,8 +6,8 @@ lock '3.5.0'
 # ------------------------------
 
 set :application,    'village'
-set :login,          'neodelf'
-set :user,           'hosting_neodelf'
+set :login,          'mishanya123'
+set :user,           'hosting_mishanya123'
 
 set :deploy_to,      "/home/#{fetch(:user)}/projects/#{fetch(:application)}"
 set :unicorn_conf,   "/etc/unicorn/#{fetch(:application)}.#{fetch(:login)}.rb"
@@ -54,6 +54,7 @@ set :unicorn_start_cmd,
     "(cd #{fetch(:deploy_to)}/current; rvm use #{fetch(:rvm_ruby_version)} " \
     "do bundle exec unicorn_rails -Dc #{fetch(:unicorn_conf)})"
 
+set :tmp_dir, '/home/hosting_mishanya123/tmp'
 
 after 'deploy:publishing', 'unicorn:restart_with_gem'
 
