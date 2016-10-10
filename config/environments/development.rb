@@ -39,6 +39,8 @@ Rails.application.configure do
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 
+  config.action_controller.perform_caching = true
+
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.register_template_extension('haml')
   config.action_mailer.default_url_options = {:host => Rails.application.secrets.mail_host, :from => Rails.application.secrets.mail_from}

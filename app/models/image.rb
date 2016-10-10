@@ -4,7 +4,7 @@ class Image < ActiveRecord::Base
   validate :upload_or_remote_url
   validates :kind, presence: true
   mount_uploader :file_data, ImageUploader
-  belongs_to :building
+  belongs_to :building, touch: true
 
   private
 
