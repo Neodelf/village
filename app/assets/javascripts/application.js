@@ -20,7 +20,6 @@
 //= require mapper
 //= require magnific
 //= require jquery.magnific-popup.min
-//= require yandex_map
 
 $(document).ready(function(){
   $('#map1 > area').mouseover(function() {
